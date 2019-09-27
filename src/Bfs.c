@@ -69,6 +69,8 @@ void bfs(int v,int n)
 			{
 				add(i);
 				vis[i]=1;
+
+
 			}
 		}
 		v=delete();
