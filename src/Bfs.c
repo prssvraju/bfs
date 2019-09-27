@@ -52,25 +52,28 @@ int main(void) {
 
 
 
-void bfs(int s,int n)
+void bfs(int v,int n)
 {
-	int p,i;
-	add(s);
-	vis[s]=1;
-	p=s;
-	while(p!=0)
+	int i;
+	add(v);
+	vis[v]=1;
+//	p=delete();
+//	if(p!=0)
+//		printf(" %d ",p);
+
+	while(v!=0)
 	{
 		for(i=1;i<=n;i++)
 		{
-			if((a[p][i]!=0)&&(vis[i]==0))
+			if((a[v][i]!=0)&&(vis[i]==0))
 			{
 				add(i);
 				vis[i]=1;
 			}
 		}
-		p=delete();
-		if(p!=0)
-			printf(" %d ",p);
+		v=delete();
+		if(v!=0)
+			printf(" %d ",v);
 	}
 	for(i=1;i<=n;i++)
 		if(vis[i]==0)
