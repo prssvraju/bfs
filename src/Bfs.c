@@ -57,10 +57,6 @@ void bfs(int v,int n)
 	int i;
 	add(v);
 	vis[v]=1;
-//	p=delete();
-//	if(p!=0)
-//		printf(" %d ",p);
-
 	while(v!=0)
 	{
 		for(i=1;i<=n;i++)
@@ -69,8 +65,6 @@ void bfs(int v,int n)
 			{
 				add(i);
 				vis[i]=1;
-
-
 			}
 		}
 		v=delete();
